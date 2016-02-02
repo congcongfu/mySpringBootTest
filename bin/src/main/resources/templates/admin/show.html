@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <title>Contact Show</title>
+    </head>
+    <body>
+        <h1 align="center">Contact show</h1>
+        <table align="center" border="1">
+            <form method="POST">
+                <tr>
+                    <th>name</th>
+                    <td><input type="text" name="name" th:value="${contact.name}"/></td>
+                </tr>
+                <tr>
+                    <th>mobile</th>
+                    <td><input type="text" name="mobile" th:value="${contact.mobile}"/></td>
+                </tr>
+                <tr>
+                    <th>vpmn</th>
+                    <td><input type="text" name="vpmn" th:value="${contact.vpmn}"/></td>
+                </tr>
+                <tr>
+                    <th>email</th>
+                    <td><input type="email" name="email" th:value="${contact.email}"/></td>
+                </tr>
+                <tr>
+                    <th>officeAddress</th>
+                    <td><input type="text" name="office_address" th:value="${contact.officeAddress}"/></td>
+                </tr>
+                <tr>
+                    <th>homeAddress</th>
+                    <td><input type="text" name="home_address" th:value="${contact.homeAddress}"/></td>
+                </tr>
+                <tr>
+                    <th>job</th>
+                    <td><input type="text" name="job" th:value="${contact.job}"/></td>
+                </tr>
+                <tr>
+                    <th>jobLevel</th>
+                    <td><input type="number" name="job_level" th:value="${contact.jobLevel}"/></td>
+                </tr>
+                <tr>
+                    <th>memo</th>
+                    <td><input type="text" name="memo" th:value="${contact.memo}"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <a th:href="@{'list'}" th:text="返回"></a>
+                        <input type="submit" name="action" th:value="update"/>
+                        <input type="submit" name="action" th:value="delete"/>                       
+                        </td>
+                </tr>
+           </form>
+        </table>
+    </body>
+</html>
