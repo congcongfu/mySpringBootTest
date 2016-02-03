@@ -20,3 +20,10 @@ CREATE TABLE `department` (
   `address` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='班级表';
+
+
+mysql> SET character_set_client='gbk';
+
+mysql> SET character_set_connection='gbk'
+
+mysql> SET character_set_results='gbk'
